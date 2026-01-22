@@ -21,31 +21,15 @@
     /* ================= HEADER ================= */
     header {
       position: relative;
-      padding: 90px 20px 140px;
+      padding: 100px 20px 140px;
       text-align: center;
       background: radial-gradient(circle at top, #3b82f6, #020617);
       overflow: hidden;
     }
 
-    .profile-pic {
-      width: 160px;
-      height: 160px;
-      margin: 0 auto 20px;
-      border-radius: 50%;
-      overflow: hidden;
-      border: 4px solid rgba(255,255,255,0.2);
-      box-shadow: 0 0 40px rgba(59,130,246,0.6);
-    }
-
-    .profile-pic img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
     header h1 {
-      font-size: 50px;
-      margin-bottom: 8px;
+      font-size: 52px;
+      margin-bottom: 10px;
     }
 
     header h2 {
@@ -202,6 +186,7 @@
       opacity: 0.9;
     }
 
+    /* ================= FOOTER ================= */
     footer {
       background: #020617;
       text-align: center;
@@ -214,8 +199,9 @@
       .about {
         grid-template-columns: 1fr;
       }
+
       header h1 {
-        font-size: 36px;
+        font-size: 38px;
       }
     }
   </style>
@@ -224,9 +210,6 @@
 <body>
 
 <header>
-  <div class="profile-pic">
-    <img src="profile.png" alt="Harshal Mankar">
-  </div>
   <h1>Harshal Mankar</h1>
   <h2>Ad Operations Executive</h2>
 </header>
@@ -245,21 +228,23 @@
   <div class="about">
     <div class="card">
       <p>
-        Ad Operations Executive with experience in campaign setup, QA,
-        pacing, reporting, and troubleshooting across display and video campaigns.
+        I am an Ad Operations Executive with hands-on experience in end-to-end
+        campaign management, including setup, QA, pacing, reporting, and troubleshooting
+        across display and video campaigns.
       </p>
       <p>
-        Strong exposure to Google Ad Manager, CPM campaigns, and client coordination.
+        I work closely with internal teams and clients to ensure smooth delivery,
+        optimization, and on-time execution.
       </p>
     </div>
 
     <div class="card">
       <h4>Quick Highlights</h4>
       <ul>
-        <li>End-to-End Campaign Management</li>
+        <li>Campaign Setup & QA</li>
         <li>Google Ad Manager (GAM)</li>
-        <li>Tag & Creative QA</li>
         <li>Pacing & Delivery Monitoring</li>
+        <li>Client Communication</li>
       </ul>
     </div>
   </div>
@@ -270,12 +255,43 @@
   <div class="divider"></div>
 
   <div class="skills">
-    <div class="skill-card"><div class="skill-icon">📊</div><h4>Google Ad Manager</h4><p>Campaign setup, trafficking, and delivery monitoring.</p></div>
-    <div class="skill-card"><div class="skill-icon">🧪</div><h4>Tag & Creative QA</h4><p>QA of display & video creatives and click-throughs.</p></div>
-    <div class="skill-card"><div class="skill-icon">⏱️</div><h4>Pacing & Optimization</h4><p>Monitoring and optimizing campaign delivery.</p></div>
-    <div class="skill-card"><div class="skill-icon">📈</div><h4>Reporting</h4><p>Daily, weekly, and end-of-campaign reports.</p></div>
-    <div class="skill-card"><div class="skill-icon">🎯</div><h4>Pricing Models</h4><p>CPM, CPC, CPA based campaigns.</p></div>
-    <div class="skill-card"><div class="skill-icon">💻</div><h4>HTML for Ads</h4><p>Basic HTML for creatives and troubleshooting.</p></div>
+
+    <div class="skill-card">
+      <div class="skill-icon">📊</div>
+      <h4>Google Ad Manager (GAM)</h4>
+      <p>Line items, creatives, targeting, trafficking, and delivery monitoring.</p>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-icon">🧪</div>
+      <h4>Tag & Creative QA</h4>
+      <p>QA of display & video creatives, click-throughs, and tracking validation.</p>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-icon">⏱️</div>
+      <h4>Pacing & Optimization</h4>
+      <p>Monitoring delivery trends and identifying under or over delivery.</p>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-icon">📈</div>
+      <h4>Reporting & Dashboards</h4>
+      <p>Daily, weekly, and end-of-campaign performance reporting.</p>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-icon">🎯</div>
+      <h4>Ad Pricing Models</h4>
+      <p>Experience with CPM, CPC, and CPA based campaigns.</p>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-icon">💻</div>
+      <h4>HTML for Ads</h4>
+      <p>Basic HTML knowledge for creatives, tags, and troubleshooting.</p>
+    </div>
+
   </div>
 </section>
 
@@ -284,14 +300,23 @@
   <div class="divider"></div>
 
   <div class="projects">
+
     <div class="card">
       <h4>Adapex</h4>
-      <p>Handled end-to-end campaign execution, QA, pacing, and on-time delivery.</p>
+      <p>
+        Worked as a Campaign Manager handling end-to-end campaign execution,
+        tag & creative QA, pacing checks, and on-time delivery.
+      </p>
     </div>
+
     <div class="card">
       <h4>Jomboy</h4>
-      <p>Managed daily QA, reporting, and live campaign monitoring.</p>
+      <p>
+        Managed daily QA, reporting, and monitoring for live campaigns
+        with regular performance checks.
+      </p>
     </div>
+
   </div>
 </section>
 
@@ -300,9 +325,11 @@
   <div class="divider"></div>
 
   <div class="card" style="text-align:center;">
-    <p>Let’s connect for Ad Operations opportunities.</p>
+    <p>If you'd like to connect or discuss Ad Operations opportunities:</p>
     <button onclick="showEmail()">Show Email</button>
-    <p id="email" style="display:none; margin-top:18px;">📧 harshalvmankar02@email.com</p>
+    <p id="email" style="display:none; margin-top:18px;">
+      📧 harshalvmankar02@email.com
+    </p>
   </div>
 </section>
 
